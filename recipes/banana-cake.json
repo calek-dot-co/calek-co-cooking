@@ -1,0 +1,32 @@
+{
+  "slug": "banana-cake",
+  "name": "Banana Cake",
+  "image": "images/banana-cake.svg",
+  "tags": ["dessert", "baking"],
+  "ingredients": [
+    "melted butter, to grease",
+    "125g butter, at room temperature",
+    "1 1/2 cups caster sugar",
+    "2 large bananas, mashed",
+    "2 eggs",
+    "1 teaspoon vanilla extract",
+    "100ml buttermilk",
+    "1 1/2 cups self-raising flour",
+    "1/2 teaspoon bicarbonate of soda",
+    "1 banana, to decorate",
+    "fresh lemon juice, to brush",
+    "Cream cheese frosting:",
+    "125g cream cheese, at room temperature",
+    "50g unsalted butter, at room temperature",
+    "1 1/2 cups icing sugar mixture",
+    "1 1/2 teaspoons buttermilk"
+  ],
+  "instructions": [
+    "Preheat oven to 180°C. Brush a round 20cm (base measurement) cake pan with melted butter to grease. Line the base and side of the pan with non-stick baking paper.",
+    "Place the butter, sugar, banana, eggs and vanilla in the bowl of a food processor, and process for 2 minutes or until well combined. Add the buttermilk and process until combined.",
+    "Add the flour and bicarbonate of soda, and process until just combined. Pour the mixture into the prepared pan. Shake the pan to settle the mixture. Bake in oven for 1 hour or until a skewer inserted into the centre comes out clean. Set aside in the pan for 10 minutes to cool slightly, before transferring the cake to a wire rack to cool completely.",
+    "Meanwhile, to make the cream cheese frosting, use an electric beater to beat the cream cheese and butter in a bowl until well combined. Add the icing sugar and beat until well combined. Add the buttermilk and beat until the mixture is pale and creamy.",
+    "Place the cake on a serving plate. Spread the cream cheese frosting over the top of the cake.",
+    "Peel and thinly slice the extra banana. Lightly brush 1 side of each slice of banana with lemon juice. Arrange the banana slices, lemon juice side up, around the edge of the frosting to serve."
+  ]
+}

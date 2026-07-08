@@ -1,0 +1,24 @@
+{
+  "slug": "olive-bread",
+  "name": "Olive Bread",
+  "image": "images/olive-bread.svg",
+  "tags": ["bread"],
+  "ingredients": [
+    "2 1/4 cups plain flour",
+    "2 teaspoons instant dried yeast",
+    "2 teaspoons caster sugar",
+    "1 teaspoon sea salt",
+    "1 cup warm water",
+    "2 green onions, thinly sliced",
+    "1 cup pitted kalamata olives",
+    "2 teaspoons milk"
+  ],
+  "instructions": [
+    "Sift 2 cups flour into a large bowl. Stir in yeast, sugar and salt. Make a well in the centre. Add water. Mix well to form a soft dough. Turn out onto a lightly floured surface. Knead for 10 minutes, gradually adding remaining flour, or until smooth and elastic.",
+    "Place dough in a lightly oiled bowl. Cover with lightly greased plastic wrap. Set aside in a warm place for 1 hour or until doubled in size.",
+    "Preheat oven to 190°C/170°C fan-forced. Grease a large baking tray.",
+    "Place olives on a plate. Pat dry with paper towel to absorb any liquid. Using your fist, repeatedly punch dough down.",
+    "Turn out onto a floured surface. Add onions and olives. Knead until combined. Set aside in a warm place for 1 hour or until doubled in size.",
+    "Shape dough into a 20cm round. Place on prepared tray. Brush with milk. Bake for 35 to 40 minutes or until golden brown and hollow when tapped on top. Stand on tray for 5 minutes. Transfer to a wire rack to cool. Serve."
+  ]
+}

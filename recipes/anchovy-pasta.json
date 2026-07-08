@@ -1,0 +1,23 @@
+{
+  "slug": "anchovy-pasta",
+  "name": "Anchovy Pasta",
+  "image": "images/anchovy-pasta.svg",
+  "tags": ["dinner", "pasta"],
+  "servings": "6",
+  "ingredients": [
+    "500g spaghetti",
+    "3 tablespoons olive oil",
+    "3 cloves garlic, crushed",
+    "45g of anchovy fillets, drained and chopped",
+    "1 cup dried breadcrumbs",
+    "1/2 cup chopped fresh parsley",
+    "2 tablespoons lemon juice",
+    "freshly ground pepper to taste",
+    "parmesan cheese"
+  ],
+  "instructions": [
+    "Heat oil in a medium frying pan over medium heat; cook and stir garlic and anchovies for 2 minutes.",
+    "Stir in breadcrumbs and turn off heat. Add parsley and lemon juice. Season with freshly ground black pepper. Stir to combine together.",
+    "Toss anchovy sauce with hot pasta and sprinkle with the parmesan cheese and serve."
+  ]
+}

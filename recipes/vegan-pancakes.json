@@ -1,0 +1,27 @@
+{
+  "slug": "vegan-pancakes",
+  "name": "Vegan Pancakes",
+  "image": "images/vegan-pancakes.svg",
+  "tags": ["breakfast", "vegan"],
+  "servings": "2-3",
+  "ingredients": [
+    "1/2 cup rolled oats",
+    "1 1/2 cups whole wheat flour",
+    "2 tbsp baking powder",
+    "2 tbsp flaxseed meal",
+    "1 cup banana, mashed",
+    "2 cups plant-based milk",
+    "2 tbsp maple syrup",
+    "Toppings:",
+    "Maple syrup",
+    "Fresh berries"
+  ],
+  "instructions": [
+    "Add rolled oats to a blender or food processor and blend it until flour.",
+    "Add wheat flour, baking powder, and flaxseed meal to the blender. Pulse to combine.",
+    "Add bananas, nut milk, maple syrup and mix again.",
+    "Heat a non-stick griddle over medium heat.",
+    "Pour 1/4 cup mixture onto heated griddle. Flip to turn over when bubbles start to appear on the surface of each pancake. Cook until brown on both sides. Repeat until all mixture has been used.",
+    "Enjoy with warm maple syrup."
+  ]
+}

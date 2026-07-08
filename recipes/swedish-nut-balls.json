@@ -1,0 +1,21 @@
+{
+  "slug": "swedish-nut-balls",
+  "name": "Swedish Nut Balls",
+  "image": "images/swedish-nut-balls.svg",
+  "tags": ["dessert", "cookies"],
+  "ingredients": [
+    "1/2 cup butter",
+    "1/2 cup sugar",
+    "1 3/4 cups flour",
+    "1 cup ground nuts (finely ground)",
+    "1 teaspoon vanilla",
+    "Icing sugar for coating"
+  ],
+  "instructions": [
+    "Preheat oven to 180°C.",
+    "Cream butter. Add sugar, flour, nuts and vanilla. Mix well. Chill for 2 hours.",
+    "Roll into balls (2cm diameter) and bake on an ungreased cookie sheet for 15 mins.",
+    "Roll in icing sugar when partly cooled."
+  ],
+  "notes": "Recipe from Kate Caish"
+}

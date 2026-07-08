@@ -1,0 +1,28 @@
+{
+  "slug": "zucchini-risotto",
+  "name": "Zucchini Risotto",
+  "image": "images/zucchini-risotto.svg",
+  "tags": ["dinner", "italian"],
+  "servings": "4-6",
+  "ingredients": [
+    "8 cups vegetable broth",
+    "handful of rosemary twigs",
+    "1/4 cup olive oil",
+    "1 medium yellow onion, finely chopped",
+    "2 cups carnaroli rice",
+    "1 cup dry white wine",
+    "1/2 kg zucchini",
+    "1/4 cup finely grated Parmesan cheese",
+    "3 tablespoons unsalted butter",
+    "salt to taste",
+    "shaved Parmesan to garnish"
+  ],
+  "instructions": [
+    "Heat the oil in a large, wide pan over medium heat. When shimmering, add the onion, rosemary and a large pinch of salt and cook, stirring often, until onion is softened, about 5 minutes.",
+    "Add the zucchini and cook for 5-8 minutes. Remove some of the cooked zucchini for garnish at the end. Add the rice and toast until it becomes slightly transparent, stirring occasionally for about 2 minutes. Add the wine and simmer, stirring often 2 to 4 minutes.",
+    "Pour a ladleful of broth over the rice. Let simmer, stirring frequently, until the rice absorbs the liquid. Continue adding broth ladleful at a time, stirring and letting it absorb, until the rice is al dente, about 20 to 30 minutes (you may need more or less liquid).",
+    "When the rice is al dente, remove rosemary bunch and remove pan from heat and stir in the grated Parmesan. Taste and season with salt as needed.",
+    "Serve immediately, top with freshly shaved Parmesan."
+  ],
+  "notes": "Recipe from Lidia Caveri, via her now-offline Italian Apartment rental website"
+}

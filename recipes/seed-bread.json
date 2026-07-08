@@ -1,0 +1,22 @@
+{
+  "slug": "seed-bread",
+  "name": "Seed Bread",
+  "image": "images/seed-bread.svg",
+  "tags": ["bread"],
+  "ingredients": [
+    "2 1/2 cups spelt flour",
+    "1/2 cup cornmeal",
+    "1/2 teaspoon instant yeast",
+    "1 1/2 teaspoons sea salt",
+    "1 1/2 cups warm filtered water",
+    "1 teaspoon olive oil",
+    "2 cups cooked brown rice",
+    "1/4 cup unhulled sesame seeds"
+  ],
+  "instructions": [
+    "Combine spelt flour, cornmeal, yeast and salt in a medium bowl. Add water and mix until combined; dough will be sticky and quite wet. Cover bowl with glad wrap securely and allow to sit at room temperature (21°C/70°F) for 14 hours. Batter will look slightly puffy and bubbly.",
+    "Brush loaf tin with oil. Remove glad wrap from bowl and add brown rice and half the sesame seeds to the dough. Use your hands to mix until rice and seeds are evenly distributed. Place dough into the oiled tin and distribute evenly. Sprinkle top with remaining sesame seeds and cover with glad wrap. Place in a draught free place to rise for 1 hour.",
+    "Preheat oven to 180°C. Bake bread for 1 hour and 15 mins or until crust has formed and bread sounds hollow when tapped. Remove bread from tin and allow to cool for at least 20 minutes before slicing."
+  ],
+  "notes": "Recipe from Louisa Streadwick"
+}

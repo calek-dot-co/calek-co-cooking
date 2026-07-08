@@ -1,0 +1,20 @@
+{
+  "slug": "easy-bread",
+  "name": "Easy Bread",
+  "image": "images/easy-bread.svg",
+  "tags": ["bread"],
+  "ingredients": [
+    "3 cups (450g) flour",
+    "2 tsp instant or rapid rise yeast",
+    "2 tsp cooking or kosher salt",
+    "1 1/2 cups (375ml) very warm tap water"
+  ],
+  "instructions": [
+    "Mix flour, yeast and salt in a large bowl. Add water, then use the handle of a wooden spoon to mix until all the flour is incorporated. Dough will be wet and sloppy – not kneadable, but not runny like cake batter. Adjust with more water or flour if needed for right consistency.",
+    "Cover with cling wrap or plate, leave on counter for 2-3 hours until it doubles in volume.",
+    "Preheat oven to 230°C/450°F (220° fan) 30 minutes prior to baking.",
+    "Shape dough: Sprinkle work surface with 1 tbsp flour, scrape dough out of bowl. Sprinkle top with 1/2 tbsp flour.",
+    "Put into bread tray with baking paper and bake for 30-45 minutes.",
+    "Cool on rack for 10 minutes before slicing."
+  ]
+}
