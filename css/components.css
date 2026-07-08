@@ -5,6 +5,7 @@
 
 .site-header__title {
   font-size: var(--font-size-display);
+  margin-bottom: 0;
 }
 
 /* Recipe list: big bold nav-style links, faint grey until hovered */
@@ -44,6 +45,10 @@
 /* Recipe page */
 .recipe-header {
   padding: var(--space-7) 0;
+}
+
+.recipe-body {
+  padding-bottom: var(--space-7);
 }
 
 .recipe-back {
@@ -97,11 +102,6 @@
   min-width: 0;
 }
 
-.recipe-pane + .recipe-pane {
-  padding-top: var(--space-6);
-  border-top: 1px solid var(--color-border);
-}
-
 .recipe-pane__title {
   font-size: var(--font-size-heading);
   margin-bottom: var(--space-4);
@@ -131,11 +131,6 @@
   .recipe-split {
     flex-direction: row;
     gap: var(--space-7);
-  }
-
-  .recipe-pane + .recipe-pane {
-    padding-top: 0;
-    border-top: none;
   }
 }
 
