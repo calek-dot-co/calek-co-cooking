@@ -1,8 +1,10 @@
 {
   "slug": "zucchini-risotto",
   "name": "Zucchini Risotto",
-  "image": "images/zucchini-risotto.svg",
-  "tags": ["dinner", "italian"],
+  "tags": [
+    "dinner",
+    "italian"
+  ],
   "servings": "4-6",
   "ingredients": [
     "8 cups vegetable broth",

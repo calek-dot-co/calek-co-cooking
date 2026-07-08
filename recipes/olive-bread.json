@@ -1,8 +1,9 @@
 {
   "slug": "olive-bread",
   "name": "Olive Bread",
-  "image": "images/olive-bread.svg",
-  "tags": ["bread"],
+  "tags": [
+    "bread"
+  ],
   "ingredients": [
     "2 1/4 cups plain flour",
     "2 teaspoons instant dried yeast",

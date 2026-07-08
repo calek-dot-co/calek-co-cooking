@@ -1,8 +1,10 @@
 {
   "slug": "spicy-pumpkin-soup",
   "name": "Spicy Pumpkin Soup",
-  "image": "images/spicy-pumpkin-soup.svg",
-  "tags": ["soup", "dinner"],
+  "tags": [
+    "soup",
+    "dinner"
+  ],
   "servings": "4",
   "ingredients": [
     "2 tablespoons butter",

@@ -1,8 +1,10 @@
 {
   "slug": "banana-cake",
   "name": "Banana Cake",
-  "image": "images/banana-cake.svg",
-  "tags": ["dessert", "baking"],
+  "tags": [
+    "dessert",
+    "baking"
+  ],
   "ingredients": [
     {
       "items": [

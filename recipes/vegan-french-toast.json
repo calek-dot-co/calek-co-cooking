@@ -1,8 +1,10 @@
 {
   "slug": "vegan-french-toast",
   "name": "Vegan French Toast",
-  "image": "images/vegan-french-toast.svg",
-  "tags": ["breakfast", "vegan"],
+  "tags": [
+    "breakfast",
+    "vegan"
+  ],
   "servings": "2",
   "ingredients": [
     {

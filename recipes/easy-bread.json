@@ -1,8 +1,9 @@
 {
   "slug": "easy-bread",
   "name": "Easy Bread",
-  "image": "images/easy-bread.svg",
-  "tags": ["bread"],
+  "tags": [
+    "bread"
+  ],
   "ingredients": [
     "3 cups (450g) flour",
     "2 tsp instant or rapid rise yeast",

@@ -1,8 +1,10 @@
 {
   "slug": "swedish-nut-balls",
   "name": "Swedish Nut Balls",
-  "image": "images/swedish-nut-balls.svg",
-  "tags": ["dessert", "cookies"],
+  "tags": [
+    "dessert",
+    "cookies"
+  ],
   "ingredients": [
     "1/2 cup butter",
     "1/2 cup sugar",

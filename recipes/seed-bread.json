@@ -1,8 +1,9 @@
 {
   "slug": "seed-bread",
   "name": "Seed Bread",
-  "image": "images/seed-bread.svg",
-  "tags": ["bread"],
+  "tags": [
+    "bread"
+  ],
   "ingredients": [
     "2 1/2 cups spelt flour",
     "1/2 cup cornmeal",

@@ -1,8 +1,10 @@
 {
   "slug": "anchovy-pasta",
   "name": "Anchovy Pasta",
-  "image": "images/anchovy-pasta.svg",
-  "tags": ["dinner", "pasta"],
+  "tags": [
+    "dinner",
+    "pasta"
+  ],
   "servings": "6",
   "ingredients": [
     "500g spaghetti",

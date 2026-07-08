@@ -1,89 +1,42 @@
 [
   {
     "slug": "anchovy-pasta",
-    "name": "Anchovy Pasta",
-    "image": "images/anchovy-pasta.svg",
-    "tags": [
-      "dinner",
-      "pasta"
-    ]
+    "name": "Anchovy Pasta"
   },
   {
     "slug": "banana-cake",
-    "name": "Banana Cake",
-    "image": "images/banana-cake.svg",
-    "tags": [
-      "dessert",
-      "baking"
-    ]
+    "name": "Banana Cake"
   },
   {
     "slug": "easy-bread",
-    "name": "Easy Bread",
-    "image": "images/easy-bread.svg",
-    "tags": [
-      "bread"
-    ]
+    "name": "Easy Bread"
   },
   {
     "slug": "olive-bread",
-    "name": "Olive Bread",
-    "image": "images/olive-bread.svg",
-    "tags": [
-      "bread"
-    ]
+    "name": "Olive Bread"
   },
   {
     "slug": "seed-bread",
-    "name": "Seed Bread",
-    "image": "images/seed-bread.svg",
-    "tags": [
-      "bread"
-    ]
+    "name": "Seed Bread"
   },
   {
     "slug": "spicy-pumpkin-soup",
-    "name": "Spicy Pumpkin Soup",
-    "image": "images/spicy-pumpkin-soup.svg",
-    "tags": [
-      "soup",
-      "dinner"
-    ]
+    "name": "Spicy Pumpkin Soup"
   },
   {
     "slug": "swedish-nut-balls",
-    "name": "Swedish Nut Balls",
-    "image": "images/swedish-nut-balls.svg",
-    "tags": [
-      "dessert",
-      "cookies"
-    ]
+    "name": "Swedish Nut Balls"
   },
   {
     "slug": "vegan-french-toast",
-    "name": "Vegan French Toast",
-    "image": "images/vegan-french-toast.svg",
-    "tags": [
-      "breakfast",
-      "vegan"
-    ]
+    "name": "Vegan French Toast"
   },
   {
     "slug": "vegan-pancakes",
-    "name": "Vegan Pancakes",
-    "image": "images/vegan-pancakes.svg",
-    "tags": [
-      "breakfast",
-      "vegan"
-    ]
+    "name": "Vegan Pancakes"
   },
   {
     "slug": "zucchini-risotto",
-    "name": "Zucchini Risotto",
-    "image": "images/zucchini-risotto.svg",
-    "tags": [
-      "dinner",
-      "italian"
-    ]
+    "name": "Zucchini Risotto"
   }
 ]

@@ -1,8 +1,10 @@
 {
   "slug": "vegan-pancakes",
   "name": "Vegan Pancakes",
-  "image": "images/vegan-pancakes.svg",
-  "tags": ["breakfast", "vegan"],
+  "tags": [
+    "breakfast",
+    "vegan"
+  ],
   "servings": "2-3",
   "ingredients": [
     {

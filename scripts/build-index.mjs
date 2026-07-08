@@ -11,7 +11,7 @@ const recipeFiles = readdirSync(recipesDir).filter(
 
 const recipes = recipeFiles
   .map((file) => JSON.parse(readFileSync(path.join(recipesDir, file), "utf8")))
-  .map(({ slug, name, image, tags }) => ({ slug, name, image, tags }))
+  .map(({ slug, name }) => ({ slug, name }))
   .sort((a, b) => a.name.localeCompare(b.name));
 
 writeFileSync(

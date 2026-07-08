@@ -22,7 +22,6 @@ function recipeHtml(recipe) {
 
   return `
     <div class="recipe-body">
-      ${recipe.image ? `<img class="recipe-photo" src="${escapeHtml(recipe.image)}" alt="${escapeHtml(recipe.name)}" />` : ""}
       <h1 class="recipe-title">${escapeHtml(recipe.name)}</h1>
       <div class="recipe-meta-row">
         <div class="recipe-tags">${tags}</div>
