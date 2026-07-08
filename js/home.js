@@ -31,7 +31,6 @@ async function openRecipeModal(slug) {
     if (!res.ok) throw new Error(`Recipe "${slug}" not found`);
     const recipe = await res.json();
     modalContent.innerHTML = recipeHtml(recipe);
-    fitSplitToViewport();
   } catch (err) {
     modalContent.innerHTML = "<p>Couldn't load this recipe.</p>";
     console.error(err);

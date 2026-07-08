@@ -1,15 +1,10 @@
 /* Site header */
 .site-header {
-  padding: var(--space-6) 0 var(--space-5);
+  padding: var(--space-6) 0 var(--space-2);
 }
 
 .site-header__title {
   font-size: var(--font-size-display);
-}
-
-.site-header__subtitle {
-  color: var(--color-text-muted);
-  font-size: var(--font-size-heading);
 }
 
 /* Recipe list: big bold nav-style links, faint grey until hovered */
@@ -91,24 +86,19 @@
   gap: var(--space-1);
 }
 
-/* Split view: mobile = two independently-scrolling stacked panes, both visible at once.
-   Height is set in JS to exactly fill the viewport below the header, since header
-   height varies per recipe (photo, tags, meta). 60dvh is just a pre-JS fallback. */
+/* Mobile: Ingredients then Instructions stacked, normal page flow/scroll. */
 .recipe-split {
   display: flex;
   flex-direction: column;
-  height: 60dvh;
+  gap: var(--space-6);
 }
 
 .recipe-pane {
-  flex: 1 1 50%;
-  min-height: 0;
-  overflow-y: auto;
-  padding: var(--space-5);
-  background: var(--color-surface);
+  min-width: 0;
 }
 
 .recipe-pane + .recipe-pane {
+  padding-top: var(--space-6);
   border-top: 1px solid var(--color-border);
 }
 
@@ -126,23 +116,15 @@
   margin-top: var(--space-2);
 }
 
-/* Desktop: simple two-column layout, no fixed height, page scrolls normally. */
+/* Desktop: simple two-column layout side by side. */
 @media (min-width: 768px) {
   .recipe-split {
     flex-direction: row;
-    height: auto;
     gap: var(--space-7);
-    border-radius: var(--radius-lg);
-    overflow: visible;
-  }
-
-  .recipe-pane {
-    overflow-y: visible;
-    padding: 0;
-    background: transparent;
   }
 
   .recipe-pane + .recipe-pane {
+    padding-top: 0;
     border-top: none;
   }
 }

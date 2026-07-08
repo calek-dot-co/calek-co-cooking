@@ -13,7 +13,6 @@ async function loadRecipe() {
     const recipe = await res.json();
     document.title = `${recipe.name} — Cooking`;
     content.innerHTML = recipeHtml(recipe);
-    fitSplitToViewport();
   } catch (err) {
     content.innerHTML = "<p>Couldn't load this recipe.</p>";
     console.error(err);

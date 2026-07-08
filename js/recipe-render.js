@@ -1,5 +1,3 @@
-const RECIPE_SPLIT_MOBILE_BREAKPOINT = 768;
-
 function recipeHtml(recipe) {
   const tags = (recipe.tags || [])
     .map((tag) => `<span class="tag">${escapeHtml(tag)}</span>`)
@@ -50,18 +48,3 @@ function escapeHtml(value) {
   div.textContent = value ?? "";
   return div.innerHTML;
 }
-
-function fitSplitToViewport() {
-  const split = document.querySelector(".recipe-split");
-  if (!split) return;
-
-  if (window.innerWidth >= RECIPE_SPLIT_MOBILE_BREAKPOINT) {
-    split.style.height = "";
-    return;
-  }
-
-  const top = split.getBoundingClientRect().top;
-  split.style.height = `calc(100dvh - ${top}px)`;
-}
-
-window.addEventListener("resize", fitSplitToViewport);
