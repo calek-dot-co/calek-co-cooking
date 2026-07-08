@@ -160,15 +160,14 @@
 }
 
 .modal__close {
-  position: sticky;
-  top: 0;
-  left: 100%;
+  position: absolute;
+  top: var(--space-4);
+  right: var(--space-4);
   display: flex;
   align-items: center;
   justify-content: center;
   width: 40px;
   height: 40px;
-  margin-bottom: var(--space-2);
   border: none;
   border-radius: var(--radius-sm);
   background: var(--color-image-bg);
@@ -196,6 +195,8 @@
   }
 
   .modal__close {
+    top: var(--space-6);
+    right: var(--space-6);
     background: transparent;
   }
 }
