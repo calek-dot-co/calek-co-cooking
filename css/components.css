@@ -118,11 +118,20 @@
   margin-top: 0;
 }
 
-/* Desktop: simple two-column layout side by side. */
+/* Desktop: two columns side by side, Instructions gets more room
+   (1/3 Ingredients, 2/3 Instructions) since it's denser prose. */
 @media (min-width: 768px) {
   .recipe-split {
     flex-direction: row;
     gap: var(--space-7);
+  }
+
+  .recipe-pane:first-child {
+    flex: 1;
+  }
+
+  .recipe-pane:last-child {
+    flex: 2;
   }
 }
 
