@@ -5,20 +5,32 @@
   "tags": ["breakfast", "vegan"],
   "servings": "2",
   "ingredients": [
-    "1 cup almond milk",
-    "1/2 tsp vanilla extract",
-    "1/2 tsp ground cinnamon",
-    "1/2 tbsp maple syrup",
-    "1 tbsp chia seeds, ground into a fine meal",
-    "5-6 slices of bread, 1-2 days old is best",
-    "Caramelised banana:",
-    "1 ripe banana",
-    "2 tbsp brown sugar",
-    "2 tbsp vegan butter or coconut oil",
-    "Toppings:",
-    "Berries",
-    "Flaked almonds",
-    "Maple syrup"
+    {
+      "items": [
+        "1 cup almond milk",
+        "1/2 tsp vanilla extract",
+        "1/2 tsp ground cinnamon",
+        "1/2 tbsp maple syrup",
+        "1 tbsp chia seeds, ground into a fine meal",
+        "5-6 slices of bread, 1-2 days old is best"
+      ]
+    },
+    {
+      "section": "Caramelised banana",
+      "items": [
+        "1 ripe banana",
+        "2 tbsp brown sugar",
+        "2 tbsp vegan butter or coconut oil"
+      ]
+    },
+    {
+      "section": "Toppings",
+      "items": [
+        "Berries",
+        "Flaked almonds",
+        "Maple syrup"
+      ]
+    }
   ],
   "instructions": [
     "Grind up the chia seeds into a powder, I used the milling blade on my nutri bullet for this. It is not essential to grind them, it just means you won't have any whole seeds in the final product.",

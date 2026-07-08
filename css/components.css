@@ -116,6 +116,16 @@
   margin-top: var(--space-2);
 }
 
+.ingredient-section {
+  font-size: var(--font-size-body);
+  font-weight: var(--font-weight-bold);
+  margin: var(--space-4) 0 var(--space-2);
+}
+
+.ingredient-section:first-child {
+  margin-top: 0;
+}
+
 /* Desktop: simple two-column layout side by side. */
 @media (min-width: 768px) {
   .recipe-split {

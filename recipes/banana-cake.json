@@ -4,22 +4,30 @@
   "image": "images/banana-cake.svg",
   "tags": ["dessert", "baking"],
   "ingredients": [
-    "melted butter, to grease",
-    "125g butter, at room temperature",
-    "1 1/2 cups caster sugar",
-    "2 large bananas, mashed",
-    "2 eggs",
-    "1 teaspoon vanilla extract",
-    "100ml buttermilk",
-    "1 1/2 cups self-raising flour",
-    "1/2 teaspoon bicarbonate of soda",
-    "1 banana, to decorate",
-    "fresh lemon juice, to brush",
-    "Cream cheese frosting:",
-    "125g cream cheese, at room temperature",
-    "50g unsalted butter, at room temperature",
-    "1 1/2 cups icing sugar mixture",
-    "1 1/2 teaspoons buttermilk"
+    {
+      "items": [
+        "melted butter, to grease",
+        "125g butter, at room temperature",
+        "1 1/2 cups caster sugar",
+        "2 large bananas, mashed",
+        "2 eggs",
+        "1 teaspoon vanilla extract",
+        "100ml buttermilk",
+        "1 1/2 cups self-raising flour",
+        "1/2 teaspoon bicarbonate of soda",
+        "1 banana, to decorate",
+        "fresh lemon juice, to brush"
+      ]
+    },
+    {
+      "section": "Cream cheese frosting",
+      "items": [
+        "125g cream cheese, at room temperature",
+        "50g unsalted butter, at room temperature",
+        "1 1/2 cups icing sugar mixture",
+        "1 1/2 teaspoons buttermilk"
+      ]
+    }
   ],
   "instructions": [
     "Preheat oven to 180°C. Brush a round 20cm (base measurement) cake pan with melted butter to grease. Line the base and side of the pan with non-stick baking paper.",

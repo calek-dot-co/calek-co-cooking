@@ -5,16 +5,24 @@
   "tags": ["breakfast", "vegan"],
   "servings": "2-3",
   "ingredients": [
-    "1/2 cup rolled oats",
-    "1 1/2 cups whole wheat flour",
-    "2 tbsp baking powder",
-    "2 tbsp flaxseed meal",
-    "1 cup banana, mashed",
-    "2 cups plant-based milk",
-    "2 tbsp maple syrup",
-    "Toppings:",
-    "Maple syrup",
-    "Fresh berries"
+    {
+      "items": [
+        "1/2 cup rolled oats",
+        "1 1/2 cups whole wheat flour",
+        "2 tbsp baking powder",
+        "2 tbsp flaxseed meal",
+        "1 cup banana, mashed",
+        "2 cups plant-based milk",
+        "2 tbsp maple syrup"
+      ]
+    },
+    {
+      "section": "Toppings",
+      "items": [
+        "Maple syrup",
+        "Fresh berries"
+      ]
+    }
   ],
   "instructions": [
     "Add rolled oats to a blender or food processor and blend it until flour.",

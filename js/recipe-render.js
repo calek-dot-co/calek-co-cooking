@@ -7,9 +7,7 @@ function recipeHtml(recipe) {
     .filter(Boolean)
     .join(" &middot; ");
 
-  const ingredients = (recipe.ingredients || [])
-    .map((item) => `<li>${escapeHtml(item)}</li>`)
-    .join("");
+  const ingredients = ingredientsHtml(recipe.ingredients);
 
   const instructions = (recipe.instructions || [])
     .map((step) => `<li>${escapeHtml(step)}</li>`)
@@ -32,7 +30,7 @@ function recipeHtml(recipe) {
     <div class="recipe-split">
       <section class="recipe-pane">
         <h2 class="recipe-pane__title">Ingredients</h2>
-        <ul>${ingredients}</ul>
+        ${ingredients}
       </section>
       <section class="recipe-pane">
         <h2 class="recipe-pane__title">Instructions</h2>
@@ -41,6 +39,24 @@ function recipeHtml(recipe) {
     </div>
     ${notes}
   `;
+}
+
+function ingredientsHtml(ingredients) {
+  if (!ingredients || ingredients.length === 0) return "<ul></ul>";
+
+  const isGrouped = typeof ingredients[0] === "object";
+  if (!isGrouped) {
+    const items = ingredients.map((item) => `<li>${escapeHtml(item)}</li>`).join("");
+    return `<ul>${items}</ul>`;
+  }
+
+  return ingredients
+    .map((group) => {
+      const heading = group.section ? `<h3 class="ingredient-section">${escapeHtml(group.section)}</h3>` : "";
+      const items = (group.items || []).map((item) => `<li>${escapeHtml(item)}</li>`).join("");
+      return `${heading}<ul>${items}</ul>`;
+    })
+    .join("");
 }
 
 function escapeHtml(value) {

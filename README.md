@@ -21,6 +21,20 @@ A simple static recipe site. No build tools, no frameworks — plain HTML, CSS, 
    }
    ```
 
+   `ingredients` can also be grouped into labeled sections (e.g. a base
+   recipe plus a frosting or topping) by using this shape instead of a
+   flat array:
+
+   ```json
+   "ingredients": [
+     { "items": ["1 cup flour", "..."] },
+     { "section": "Frosting", "items": ["125g cream cheese", "..."] }
+   ]
+   ```
+
+   The first group's `section` can be omitted if those ingredients don't
+   need a heading.
+
 3. Commit and push to `main`. A GitHub Action automatically regenerates `recipes/index.json` (the homepage's recipe list) — you don't need to edit it by hand.
 
    To preview the updated index locally before pushing, run:
