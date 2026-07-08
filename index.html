@@ -16,6 +16,16 @@
     </header>
     <ul class="recipe-grid" id="recipe-grid"></ul>
   </div>
+
+  <div class="modal" id="recipe-modal" hidden>
+    <div class="modal__backdrop" data-close></div>
+    <div class="modal__panel" role="dialog" aria-modal="true">
+      <button class="modal__close" type="button" data-close aria-label="Close">&times;</button>
+      <div id="modal-content"></div>
+    </div>
+  </div>
+
+  <script src="js/recipe-render.js"></script>
   <script src="js/home.js"></script>
 </body>
 </html>

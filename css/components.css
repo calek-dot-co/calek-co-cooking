@@ -114,7 +114,7 @@
 
 .recipe-pane__title {
   font-size: var(--font-size-heading);
-  margin-bottom: var(--space-2);
+  margin-bottom: var(--space-4);
 }
 
 .recipe-pane ul,
@@ -149,13 +149,74 @@
 
 .recipe-notes {
   margin-top: var(--space-7);
-  padding-top: var(--space-5);
-  border-top: 1px solid var(--color-border);
 }
 
 .recipe-notes__title {
   font-size: var(--font-size-heading);
   font-weight: var(--font-weight-bold);
   letter-spacing: var(--letter-spacing-tight);
+  margin-bottom: var(--space-4);
+}
+
+/* Recipe modal: full screen on mobile with a close X; centered 80%-width
+   panel with a mid-grey backdrop on desktop, closable by clicking outside. */
+.modal {
+  position: fixed;
+  inset: 0;
+  z-index: 100;
+}
+
+.modal__backdrop {
+  position: absolute;
+  inset: 0;
+  background: transparent;
+}
+
+.modal__panel {
+  position: relative;
+  height: 100%;
+  overflow-y: auto;
+  background: var(--color-surface);
+  padding: var(--space-4);
+}
+
+.modal__close {
+  position: sticky;
+  top: 0;
+  left: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
   margin-bottom: var(--space-2);
+  border: none;
+  border-radius: var(--radius-sm);
+  background: var(--color-image-bg);
+  color: var(--color-text);
+  font-size: 1.5rem;
+  line-height: 1;
+  cursor: pointer;
+}
+
+@media (min-width: 768px) {
+  .modal__backdrop {
+    background: rgba(110, 110, 110, 0.6);
+  }
+
+  .modal__panel {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 80%;
+    height: auto;
+    max-height: 85vh;
+    border-radius: var(--radius-lg);
+    padding: var(--space-6);
+  }
+
+  .modal__close {
+    background: transparent;
+  }
 }
