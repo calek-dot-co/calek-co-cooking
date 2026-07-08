@@ -1,0 +1,19 @@
+[
+  {
+    "slug": "example-pancakes",
+    "name": "Fluffy Pancakes",
+    "image": "images/example-pancakes.svg",
+    "tags": [
+      "breakfast"
+    ]
+  },
+  {
+    "slug": "example-tomato-soup",
+    "name": "Tomato Soup",
+    "image": "images/example-tomato-soup.svg",
+    "tags": [
+      "dinner",
+      "soup"
+    ]
+  }
+]

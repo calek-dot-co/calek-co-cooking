@@ -1,0 +1,213 @@
+/* Site header */
+.site-header {
+  padding: var(--space-6) 0 var(--space-5);
+}
+
+.site-header__title {
+  font-size: var(--font-size-display);
+  font-weight: 700;
+}
+
+.site-header__subtitle {
+  color: var(--color-text-muted);
+  font-size: var(--font-size-body);
+}
+
+/* Recipe card grid (mobile-first: single column list) */
+.recipe-grid {
+  list-style: none;
+  margin: 0 0 var(--space-7);
+  padding: 0;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: var(--space-4);
+}
+
+@media (min-width: 768px) {
+  .recipe-grid {
+    grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+    gap: var(--space-5);
+  }
+}
+
+.recipe-card {
+  display: flex;
+  gap: var(--space-4);
+  background: var(--color-surface);
+  border-radius: var(--radius-md);
+  box-shadow: var(--shadow-card);
+  overflow: hidden;
+}
+
+@media (min-width: 768px) {
+  .recipe-card {
+    flex-direction: column;
+    gap: 0;
+  }
+}
+
+.recipe-card__image {
+  width: 96px;
+  height: 96px;
+  object-fit: cover;
+  flex-shrink: 0;
+}
+
+@media (min-width: 768px) {
+  .recipe-card__image {
+    width: 100%;
+    height: 160px;
+  }
+}
+
+.recipe-card__body {
+  padding: var(--space-3) var(--space-4) var(--space-3) 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: var(--space-2);
+  min-width: 0;
+}
+
+@media (min-width: 768px) {
+  .recipe-card__body {
+    padding: var(--space-4);
+  }
+}
+
+.recipe-card__name {
+  font-size: var(--font-size-heading);
+  font-weight: 600;
+}
+
+.recipe-card__tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-1);
+}
+
+.tag {
+  display: inline-block;
+  background: var(--color-tag-bg);
+  color: var(--color-tag-text);
+  font-size: var(--font-size-small);
+  padding: var(--space-1) var(--space-2);
+  border-radius: var(--radius-sm);
+}
+
+/* Recipe page */
+.recipe-header {
+  padding: var(--space-5) 0;
+}
+
+.recipe-back {
+  display: inline-block;
+  margin-bottom: var(--space-4);
+  color: var(--color-accent);
+  font-weight: 600;
+}
+
+.recipe-photo {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+  border-radius: var(--radius-lg);
+  margin-bottom: var(--space-4);
+}
+
+.recipe-title {
+  font-size: var(--font-size-display);
+  font-weight: 700;
+}
+
+.recipe-meta {
+  display: flex;
+  gap: var(--space-4);
+  color: var(--color-text-muted);
+  font-size: var(--font-size-small);
+  margin-bottom: var(--space-2);
+}
+
+.recipe-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-1);
+  margin-bottom: var(--space-2);
+}
+
+/* Split view: mobile = two independently-scrolling stacked panes, both visible at once.
+   Height is set in JS to exactly fill the viewport below the header, since header
+   height varies per recipe (photo, tags, meta). 60dvh is just a pre-JS fallback. */
+.recipe-split {
+  display: flex;
+  flex-direction: column;
+  height: 60dvh;
+}
+
+.recipe-pane {
+  flex: 1 1 50%;
+  min-height: 0;
+  overflow-y: auto;
+  padding: var(--space-4);
+  background: var(--color-surface);
+}
+
+.recipe-pane + .recipe-pane {
+  border-top: 1px solid var(--color-border);
+}
+
+.recipe-pane__title {
+  font-size: var(--font-size-heading);
+  font-weight: 600;
+  position: sticky;
+  top: 0;
+  background: var(--color-surface);
+  padding-bottom: var(--space-2);
+}
+
+.recipe-pane ul,
+.recipe-pane ol {
+  padding-left: 1.25em;
+}
+
+.recipe-pane li + li {
+  margin-top: var(--space-2);
+}
+
+/* Desktop: simple two-column layout, no fixed height, page scrolls normally. */
+@media (min-width: 768px) {
+  .recipe-split {
+    flex-direction: row;
+    height: auto;
+    gap: var(--space-6);
+    border-radius: var(--radius-lg);
+    overflow: visible;
+  }
+
+  .recipe-pane {
+    overflow-y: visible;
+    padding: 0;
+    background: transparent;
+  }
+
+  .recipe-pane + .recipe-pane {
+    border-top: none;
+  }
+
+  .recipe-pane__title {
+    position: static;
+    background: transparent;
+  }
+}
+
+.recipe-notes {
+  margin-top: var(--space-6);
+  padding: var(--space-4);
+  background: var(--color-tag-bg);
+  border-radius: var(--radius-md);
+}
+
+.recipe-notes__title {
+  font-size: var(--font-size-heading);
+  font-weight: 600;
+}

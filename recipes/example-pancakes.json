@@ -1,0 +1,26 @@
+{
+  "slug": "example-pancakes",
+  "name": "Fluffy Pancakes",
+  "image": "images/example-pancakes.svg",
+  "tags": ["breakfast"],
+  "servings": "4",
+  "time": "25 min",
+  "ingredients": [
+    "1 1/2 cups all-purpose flour",
+    "3 1/2 tsp baking powder",
+    "1 tsp salt",
+    "1 tbsp sugar",
+    "1 1/4 cups milk",
+    "1 egg",
+    "3 tbsp melted butter"
+  ],
+  "instructions": [
+    "Whisk together flour, baking powder, salt, and sugar in a large bowl.",
+    "In a separate bowl, whisk milk, egg, and melted butter.",
+    "Pour the wet ingredients into the dry ingredients and stir until just combined; a few lumps are fine.",
+    "Heat a lightly greased griddle or pan over medium heat.",
+    "Pour 1/4 cup batter per pancake. Cook until bubbles form on the surface, then flip and cook until golden.",
+    "Serve warm with butter and syrup."
+  ],
+  "notes": "Let the batter rest for 5 minutes before cooking for extra fluffy pancakes."
+}
