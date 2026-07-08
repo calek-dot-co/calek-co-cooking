@@ -64,8 +64,10 @@ function recipeHtml(recipe) {
   return `
     ${recipe.image ? `<img class="recipe-photo" src="${escapeHtml(recipe.image)}" alt="${escapeHtml(recipe.name)}" />` : ""}
     <h1 class="recipe-title">${escapeHtml(recipe.name)}</h1>
-    ${meta ? `<div class="recipe-meta">${meta}</div>` : ""}
-    <div class="recipe-tags">${tags}</div>
+    <div class="recipe-meta-row">
+      <div class="recipe-tags">${tags}</div>
+      ${meta ? `<span class="recipe-meta">${meta}</span>` : ""}
+    </div>
     <div class="recipe-split">
       <section class="recipe-pane">
         <h2 class="recipe-pane__title">Ingredients</h2>
