@@ -62,17 +62,28 @@ function ingredientsHtml(ingredients) {
 
   const isGrouped = typeof ingredients[0] === "object";
   if (!isGrouped) {
-    const items = ingredients.map((item) => `<li>${escapeHtml(item)}</li>`).join("");
+    const items = ingredients.map(ingredientItemHtml).join("");
     return `<ul>${items}</ul>`;
   }
 
   return ingredients
     .map((group) => {
       const heading = group.section ? `<h3 class="ingredient-section">${escapeHtml(group.section)}</h3>` : "";
-      const items = (group.items || []).map((item) => `<li>${escapeHtml(item)}</li>`).join("");
+      const items = (group.items || []).map(ingredientItemHtml).join("");
       return `${heading}<ul>${items}</ul>`;
     })
     .join("");
+}
+
+function ingredientItemHtml(item) {
+  return `
+    <li>
+      <label class="ingredient-item">
+        <input type="checkbox" class="ingredient-item__checkbox" />
+        <span class="ingredient-item__text">${escapeHtml(item)}</span>
+      </label>
+    </li>
+  `;
 }
 
 function escapeHtml(value) {

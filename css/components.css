@@ -178,13 +178,38 @@
   margin-bottom: var(--space-4);
 }
 
-.recipe-pane ul,
 .recipe-pane ol {
   padding-left: 1.25em;
 }
 
+.recipe-pane ul {
+  list-style: none;
+  padding-left: 0;
+}
+
 .recipe-pane li + li {
   margin-top: var(--space-2);
+}
+
+.ingredient-item {
+  display: flex;
+  align-items: flex-start;
+  gap: var(--space-2);
+  cursor: pointer;
+}
+
+.ingredient-item__checkbox {
+  flex-shrink: 0;
+  width: 18px;
+  height: 18px;
+  margin-top: 0.2em;
+  accent-color: var(--color-accent);
+  cursor: pointer;
+}
+
+.ingredient-item__checkbox:checked + .ingredient-item__text {
+  font-style: italic;
+  text-decoration: line-through;
 }
 
 .ingredient-section {
