@@ -57,7 +57,7 @@ A simple static recipe site. No build tools, no frameworks — plain HTML, CSS, 
 
 ## Keeping a recipe off the site
 
-Move its file into `recipes/old/` (any subfolder works). `build-index.mjs`
+Move its file into `recipes/_old/` (any subfolder works). `build-index.mjs`
 only reads files directly inside `recipes/`, so anything nested in a
 subfolder is skipped when the homepage list is generated — it stays in the
 repo but won't show up on the site or be linked from anywhere.

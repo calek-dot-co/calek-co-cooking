@@ -1,22 +1,27 @@
 [
   {
     "slug": "cous-cous-salad",
-    "name": "Cous Cous Salad"
+    "name": "Cous Cous Salad",
+    "image": "images/cous-cous-salad.jpg"
   },
   {
     "slug": "olive-bread",
-    "name": "Olive Bread"
+    "name": "Olive Bread",
+    "image": "images/olive-bread.jpeg"
   },
   {
     "slug": "seed-bread",
-    "name": "Seed Bread"
+    "name": "Seed Bread",
+    "image": "images/seed-bread.jpg"
   },
   {
     "slug": "spicy-pumpkin-soup",
-    "name": "Spicy Pumpkin Soup"
+    "name": "Spicy Pumpkin Soup",
+    "image": "images/spicy-pumpkin-soup.jpeg"
   },
   {
     "slug": "zucchini-risotto",
-    "name": "Zucchini Risotto"
+    "name": "Zucchini Risotto",
+    "image": "images/zucchini-risotto.jpeg"
   }
 ]

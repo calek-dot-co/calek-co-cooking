@@ -3,17 +3,26 @@ async function loadRecipes() {
   try {
     const res = await fetch("recipes/index.json");
     const recipes = await res.json();
-    grid.innerHTML = recipes.map(recipeLinkHtml).join("");
+    grid.innerHTML = recipes.map(recipeRowHtml).join("");
   } catch (err) {
     grid.innerHTML = "<li>Couldn't load recipes.</li>";
     console.error(err);
   }
 }
 
-function recipeLinkHtml(recipe) {
+function recipeRowHtml(recipe) {
+  const thumb = recipe.image
+    ? `<span class="recipe-row__thumb" style="--rotate: ${randomRotation()}deg">
+         <img src="${escapeHtml(recipe.image)}" alt="" />
+       </span>`
+    : "";
+
   return `
     <li>
-      <a class="recipe-link" href="recipe.html?slug=${encodeURIComponent(recipe.slug)}" data-slug="${escapeHtml(recipe.slug)}">${escapeHtml(recipe.name)}</a>
+      <a class="recipe-row" href="recipe.html?slug=${encodeURIComponent(recipe.slug)}" data-slug="${escapeHtml(recipe.slug)}">
+        <span class="recipe-row__name">${escapeHtml(recipe.name)}</span>
+        ${thumb}
+      </a>
     </li>
   `;
 }
@@ -44,11 +53,11 @@ function closeRecipeModal() {
 }
 
 document.getElementById("recipe-grid").addEventListener("click", (event) => {
-  const link = event.target.closest(".recipe-link");
-  if (!link) return;
+  const row = event.target.closest(".recipe-row");
+  if (!row) return;
   if (event.metaKey || event.ctrlKey || event.shiftKey || event.button !== 0) return;
   event.preventDefault();
-  openRecipeModal(link.dataset.slug);
+  openRecipeModal(row.dataset.slug);
 });
 
 recipeModal.addEventListener("click", (event) => {

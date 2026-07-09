@@ -1,3 +1,7 @@
+function randomRotation(min = -10, max = 10) {
+  return (Math.random() * (max - min) + min).toFixed(1);
+}
+
 function recipeHtml(recipe) {
   const tags = (recipe.tags || [])
     .map((tag) => `<span class="tag">${escapeHtml(tag)}</span>`)
@@ -12,7 +16,7 @@ function recipeHtml(recipe) {
     .join(" &middot; ");
 
   const photo = recipe.image
-    ? `<img class="recipe-photo" src="${escapeHtml(recipe.image)}" alt="${escapeHtml(recipe.name)}" />`
+    ? `<img class="recipe-photo" src="${escapeHtml(recipe.image)}" alt="${escapeHtml(recipe.name)}" style="transform: rotate(${randomRotation()}deg)" />`
     : "";
 
   const ingredients = ingredientsHtml(recipe.ingredients);
