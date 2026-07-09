@@ -225,8 +225,13 @@
   margin-bottom: var(--space-4);
 }
 
-/* Recipe modal: full screen on mobile with a close X; centered 80%-width
-   panel with a mid-grey backdrop on desktop, closable by clicking outside. */
+/* Recipe modal: full screen on mobile with a close X. On desktop, a
+   centered 80%-width panel sized to its content with a mid-grey backdrop,
+   closable by clicking outside. .modal__backdrop is fixed (not a child of
+   the scrolling container) so it always covers the full viewport, and
+   .modal__scroll — not .modal__panel — owns the scrollbar, so overflow
+   scrolls the whole viewport edge instead of clipping inside the rounded
+   panel. */
 .modal {
   position: fixed;
   inset: 0;
@@ -234,15 +239,20 @@
 }
 
 .modal__backdrop {
-  position: absolute;
+  position: fixed;
   inset: 0;
   background: transparent;
 }
 
-.modal__panel {
+.modal__scroll {
   position: relative;
   height: 100%;
   overflow-y: auto;
+}
+
+.modal__panel {
+  position: relative;
+  min-height: 100%;
   background: var(--color-surface);
   padding: var(--space-4);
 }
@@ -271,13 +281,9 @@
   }
 
   .modal__panel {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
     width: 80%;
-    height: auto;
-    max-height: 85vh;
+    min-height: 0;
+    margin: 10vh auto;
     border-radius: var(--radius-lg);
     padding: var(--space-6);
   }
