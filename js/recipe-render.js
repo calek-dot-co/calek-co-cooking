@@ -1,4 +1,4 @@
-function randomRotation(min = -10, max = 10) {
+function randomRotation(min = -5, max = 5) {
   return (Math.random() * (max - min) + min).toFixed(1);
 }
 

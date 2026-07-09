@@ -125,7 +125,7 @@
   display: flex;
   align-items: center;
   gap: var(--space-4);
-  margin-bottom: var(--space-5);
+  margin-bottom: var(--space-6);
 }
 
 .recipe-photo {
@@ -203,7 +203,7 @@
   width: 18px;
   height: 18px;
   margin-top: 0.2em;
-  accent-color: var(--color-accent);
+  accent-color: var(--color-text);
   cursor: pointer;
 }
 
@@ -227,7 +227,7 @@
 @media (min-width: 768px) {
   .recipe-split {
     flex-direction: row;
-    gap: var(--space-7);
+    gap: var(--space-6);
   }
 
   .recipe-pane:first-child {
@@ -240,7 +240,7 @@
 }
 
 .recipe-notes {
-  margin-top: var(--space-7);
+  margin-top: var(--space-6);
 }
 
 .recipe-notes__title {
