@@ -252,27 +252,23 @@
 
 /* Recipe modal: full screen on mobile with a close X. On desktop, a
    centered 80%-width panel sized to its content with a mid-grey backdrop,
-   closable by clicking outside. .modal__backdrop is fixed (not a child of
-   the scrolling container) so it always covers the full viewport, and
-   .modal__scroll — not .modal__panel — owns the scrollbar, so overflow
-   scrolls the whole viewport edge instead of clipping inside the rounded
-   panel. */
+   closable by clicking outside. .modal__scroll doubles as the backdrop
+   (its own background, not a separate element) since it's the thing that
+   visually spans the full viewport — a separate backdrop layer would sit
+   underneath it and never receive the click. It also owns the scrollbar
+   instead of .modal__panel, so overflow scrolls the whole viewport edge
+   rather than clipping inside the rounded panel. */
 .modal {
   position: fixed;
   inset: 0;
   z-index: 100;
 }
 
-.modal__backdrop {
-  position: fixed;
-  inset: 0;
-  background: transparent;
-}
-
 .modal__scroll {
   position: relative;
   height: 100%;
   overflow-y: auto;
+  background: transparent;
 }
 
 .modal__panel {
@@ -301,7 +297,7 @@
 }
 
 @media (min-width: 768px) {
-  .modal__backdrop {
+  .modal__scroll {
     background: rgba(110, 110, 110, 0.6);
   }
 

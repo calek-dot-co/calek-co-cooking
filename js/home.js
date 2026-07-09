@@ -61,7 +61,11 @@ document.getElementById("recipe-grid").addEventListener("click", (event) => {
 });
 
 recipeModal.addEventListener("click", (event) => {
-  if (event.target.closest("[data-close]")) closeRecipeModal();
+  // matches (not closest) — .modal__scroll has data-close and wraps the
+  // panel, so closest() would also match clicks bubbling up from inside
+  // the panel content. Only close on a direct hit: the scroll container's
+  // own background, or the close button itself.
+  if (event.target.matches("[data-close]")) closeRecipeModal();
 });
 
 document.addEventListener("keydown", (event) => {
