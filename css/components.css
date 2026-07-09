@@ -47,9 +47,15 @@
   overflow: hidden;
   border-radius: var(--radius-sm);
   background: var(--color-image-bg);
+  border: 3px solid #ffffff;
   opacity: 1;
   transform: translateY(-50%) rotate(var(--rotate, 0deg));
   transition: opacity 0.15s ease;
+  z-index: 0;
+}
+
+.recipe-row:hover .recipe-row__thumb {
+  z-index: 1;
 }
 
 .recipe-row__thumb img {
@@ -76,10 +82,19 @@
   opacity: 0.75;
 }
 
-/* Desktop: text-only list by default; hovering a row reveals just that
-   row's tilted photo instead of always showing it. */
+/* Desktop: text-only list by default, at 2x the font size; hovering a row
+   reveals just that row's tilted photo right after the text — inline, not
+   pinned to the row's far edge, so there's no gap for short recipe names. */
 @media (min-width: 768px) {
+  .recipe-row {
+    display: inline-flex;
+    align-items: center;
+    gap: var(--space-4);
+  }
+
   .recipe-row__name {
+    padding-right: 0;
+    font-size: calc(var(--font-size-display) * 2);
     color: var(--color-text-faint);
   }
 
@@ -88,6 +103,9 @@
   }
 
   .recipe-row__thumb {
+    position: static;
+    border: none;
+    transform: rotate(var(--rotate, 0deg));
     opacity: 0;
   }
 
