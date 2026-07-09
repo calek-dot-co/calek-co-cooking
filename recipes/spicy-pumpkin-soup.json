@@ -6,6 +6,7 @@
     "dinner"
   ],
   "servings": "4",
+  "time": "",
   "ingredients": [
     "2 tablespoons butter",
     "3/4 teaspoon ground cumin",
@@ -22,5 +23,6 @@
     "Puree soup in 2 batches in a food processor or blender until smooth.",
     "Return soup to pan and stir over medium heat for 2-3 minutes or until heated through. Season with salt and pepper. Combine remaining cumin with sour cream.",
     "Serve soup with a dollop of sour cream mixture and a sprinkling of pepper."
-  ]
+  ],
+  "notes": ""
 }

@@ -5,8 +5,12 @@ import { fileURLToPath } from "node:url";
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const recipesDir = path.join(__dirname, "..", "recipes");
 
+// readdirSync only lists recipesDir's immediate entries — it does not recurse
+// into subdirectories, so recipes/old/**.json (drafts/retired recipes kept out
+// of publishing) is skipped automatically. _template.json is a reference file,
+// not a real recipe, so it's excluded explicitly.
 const recipeFiles = readdirSync(recipesDir).filter(
-  (file) => file.endsWith(".json") && file !== "index.json"
+  (file) => file.endsWith(".json") && file !== "index.json" && file !== "_template.json"
 );
 
 const recipes = recipeFiles

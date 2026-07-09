@@ -1,0 +1,18 @@
+{
+  "slug": "recipe-template",
+  "name": "Recipe Template",
+  "tags": ["dinner", "example-tag"],
+  "servings": "4",
+  "time": "30 min",
+  "ingredients": [
+    {
+      "items": ["1 cup flour", "2 eggs", "..."]
+    },
+    {
+      "section": "Optional labeled section (e.g. a frosting or topping)",
+      "items": ["125g cream cheese", "..."]
+    }
+  ],
+  "instructions": ["Step one.", "Step two.", "..."],
+  "notes": "Optional freeform text, e.g. an attribution or a substitution tip."
+}

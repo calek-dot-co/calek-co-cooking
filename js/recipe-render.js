@@ -7,6 +7,14 @@ function recipeHtml(recipe) {
     .filter(Boolean)
     .join(" &middot; ");
 
+  const metaRow =
+    tags || meta
+      ? `<div class="recipe-meta-row">
+           ${tags ? `<div class="recipe-tags">${tags}</div>` : ""}
+           ${meta ? `<span class="recipe-meta">${meta}</span>` : ""}
+         </div>`
+      : "";
+
   const ingredients = ingredientsHtml(recipe.ingredients);
 
   const instructions = (recipe.instructions || [])
@@ -23,10 +31,7 @@ function recipeHtml(recipe) {
   return `
     <div class="recipe-body">
       <h1 class="recipe-title">${escapeHtml(recipe.name)}</h1>
-      <div class="recipe-meta-row">
-        <div class="recipe-tags">${tags}</div>
-        ${meta ? `<span class="recipe-meta">${meta}</span>` : ""}
-      </div>
+      ${metaRow}
       <div class="recipe-split">
         <section class="recipe-pane">
           <h2 class="recipe-pane__title">Ingredients</h2>

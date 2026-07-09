@@ -1,15 +1,7 @@
 [
   {
-    "slug": "anchovy-pasta",
-    "name": "Anchovy Pasta"
-  },
-  {
-    "slug": "banana-cake",
-    "name": "Banana Cake"
-  },
-  {
-    "slug": "easy-bread",
-    "name": "Easy Bread"
+    "slug": "cous-cous-salad",
+    "name": "Cous Cous Salad"
   },
   {
     "slug": "olive-bread",
@@ -22,18 +14,6 @@
   {
     "slug": "spicy-pumpkin-soup",
     "name": "Spicy Pumpkin Soup"
-  },
-  {
-    "slug": "swedish-nut-balls",
-    "name": "Swedish Nut Balls"
-  },
-  {
-    "slug": "vegan-french-toast",
-    "name": "Vegan French Toast"
-  },
-  {
-    "slug": "vegan-pancakes",
-    "name": "Vegan Pancakes"
   },
   {
     "slug": "zucchini-risotto",
