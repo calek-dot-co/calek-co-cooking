@@ -1,12 +1,14 @@
 {
   "slug": "spicy-pumpkin-soup",
   "name": "Spicy Pumpkin Soup",
+  "image": "images/spicy-pumpkin-soup.jpeg",
   "tags": [
     "soup",
     "dinner"
   ],
   "servings": "4",
-  "time": "",
+  "prepTime": "",
+  "cookTime": "",
   "ingredients": [
     "2 tablespoons butter",
     "3/4 teaspoon ground cumin",

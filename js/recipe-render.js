@@ -3,17 +3,17 @@ function recipeHtml(recipe) {
     .map((tag) => `<span class="tag">${escapeHtml(tag)}</span>`)
     .join("");
 
-  const meta = [recipe.servings && `${escapeHtml(recipe.servings)} servings`, recipe.time && escapeHtml(recipe.time)]
+  const meta = [
+    recipe.prepTime && `${escapeHtml(recipe.prepTime)} prep`,
+    recipe.cookTime && `${escapeHtml(recipe.cookTime)} cooking`,
+    recipe.servings && `serves ${escapeHtml(recipe.servings)}`,
+  ]
     .filter(Boolean)
     .join(" &middot; ");
 
-  const metaRow =
-    tags || meta
-      ? `<div class="recipe-meta-row">
-           ${tags ? `<div class="recipe-tags">${tags}</div>` : ""}
-           ${meta ? `<span class="recipe-meta">${meta}</span>` : ""}
-         </div>`
-      : "";
+  const photo = recipe.image
+    ? `<img class="recipe-photo" src="${escapeHtml(recipe.image)}" alt="${escapeHtml(recipe.name)}" />`
+    : "";
 
   const ingredients = ingredientsHtml(recipe.ingredients);
 
@@ -30,8 +30,14 @@ function recipeHtml(recipe) {
 
   return `
     <div class="recipe-body">
-      <h1 class="recipe-title">${escapeHtml(recipe.name)}</h1>
-      ${metaRow}
+      <div class="recipe-header-row">
+        ${photo}
+        <div class="recipe-header-text">
+          <h1 class="recipe-title">${escapeHtml(recipe.name)}</h1>
+          ${tags ? `<div class="recipe-tags">${tags}</div>` : ""}
+        </div>
+      </div>
+      ${meta ? `<div class="recipe-meta">${meta}</div>` : ""}
       <div class="recipe-split">
         <section class="recipe-pane">
           <h2 class="recipe-pane__title">Ingredients</h2>

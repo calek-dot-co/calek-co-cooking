@@ -37,6 +37,7 @@
   --radius-sm: 10px;
   --radius-md: 16px;
   --radius-lg: 28px;
+  --radius-full: 999px;
 
   /* Elevation: flat by default, cards rely on a border instead of shadow */
   --shadow-card: none;

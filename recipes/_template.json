@@ -1,9 +1,11 @@
 {
   "slug": "recipe-template",
   "name": "Recipe Template",
+  "image": "images/recipe-template.jpg",
   "tags": ["dinner", "example-tag"],
-  "servings": "4",
-  "time": "30 min",
+  "servings": "2",
+  "prepTime": "15 mins",
+  "cookTime": "10 mins",
   "ingredients": [
     {
       "items": ["1 cup flour", "2 eggs", "..."]

@@ -1,12 +1,14 @@
 {
   "slug": "cous-cous-salad",
   "name": "Cous Cous Salad",
+  "image": "images/cous-cous-salad.jpg",
   "tags": [
     "dinner",
     "vegan"
   ],
   "servings": "2",
-  "time": "",
+  "prepTime": "",
+  "cookTime": "",
   "ingredients": [
     "1 cup (180 g) dry couscous",
     "2 cup (500 ml) vegetable stock",

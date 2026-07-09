@@ -1,11 +1,13 @@
 {
   "slug": "olive-bread",
   "name": "Olive Bread",
+  "image": "images/olive-bread.jpeg",
   "tags": [
     "bread"
   ],
   "servings": "",
-  "time": "",
+  "prepTime": "",
+  "cookTime": "",
   "ingredients": [
     "2 1/4 cups plain flour",
     "2 teaspoons instant dried yeast",

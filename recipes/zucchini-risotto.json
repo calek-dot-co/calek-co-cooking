@@ -1,12 +1,14 @@
 {
   "slug": "zucchini-risotto",
   "name": "Zucchini Risotto",
+  "image": "images/zucchini-risotto.jpeg",
   "tags": [
     "dinner",
     "italian"
   ],
   "servings": "4-6",
-  "time": "",
+  "prepTime": "",
+  "cookTime": "",
   "ingredients": [
     "8 cups vegetable broth",
     "handful of rosemary twigs",

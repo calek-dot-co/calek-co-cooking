@@ -1,11 +1,13 @@
 {
   "slug": "seed-bread",
   "name": "Seed Bread",
+  "image": "images/seed-bread.jpg",
   "tags": [
     "bread"
   ],
   "servings": "",
-  "time": "",
+  "prepTime": "",
+  "cookTime": "",
   "ingredients": [
     "2 1/2 cups spelt flour",
     "1/2 cup cornmeal",

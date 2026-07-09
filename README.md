@@ -4,16 +4,20 @@ A simple static recipe site. No build tools, no frameworks — plain HTML, CSS, 
 
 ## Adding a recipe
 
-1. Copy `recipes/_template.json` to `recipes/<your-slug>.json` and fill it in.
+1. Add a photo to `images/` (any dimensions — it's displayed in a fixed
+   portrait frame and cropped to fit, so any aspect ratio works).
+2. Copy `recipes/_template.json` to `recipes/<your-slug>.json` and fill it in.
    It has every field the site supports:
 
    ```json
    {
      "slug": "your-slug",
      "name": "Recipe Name",
+     "image": "images/your-photo.jpg",
      "tags": ["dinner"],
      "servings": "4",
-     "time": "30 min",
+     "prepTime": "15 mins",
+     "cookTime": "10 mins",
      "ingredients": ["1 cup flour", "..."],
      "instructions": ["Step one.", "..."],
      "notes": "..."
@@ -23,8 +27,8 @@ A simple static recipe site. No build tools, no frameworks — plain HTML, CSS, 
    Every field should stay present in every recipe file — if you don't have
    the content for one, leave it blank (`""` for text fields, `[]` for
    `tags`) rather than deleting the key. The front end skips rendering
-   anything left blank (tags row, servings/time, notes) instead of showing
-   an empty gap.
+   anything left blank (image, tags row, servings/prep/cook time, notes)
+   instead of showing an empty gap.
 
    `ingredients` can also be grouped into labeled sections (e.g. a base
    recipe plus a frosting or topping) by using this shape instead of a
@@ -43,7 +47,7 @@ A simple static recipe site. No build tools, no frameworks — plain HTML, CSS, 
    `_template.json` itself is a reference file, not a real recipe — it's
    excluded from the homepage automatically.
 
-2. Commit and push to `main`. A GitHub Action automatically regenerates `recipes/index.json` (the homepage's recipe list) — you don't need to edit it by hand.
+3. Commit and push to `main`. A GitHub Action automatically regenerates `recipes/index.json` (the homepage's recipe list) — you don't need to edit it by hand.
 
    To preview the updated index locally before pushing, run:
 
