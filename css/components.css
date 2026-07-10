@@ -177,6 +177,16 @@
   font-size: var(--font-size-display);
 }
 
+@media (min-width: 768px) {
+  .recipe-title {
+    font-size: calc(var(--font-size-display) * 2);
+  }
+
+  .recipe-photo {
+    width: 180px;
+  }
+}
+
 .recipe-meta {
   display: block;
   color: var(--color-text-muted);
@@ -307,6 +317,13 @@
   padding: var(--space-4);
 }
 
+/* Mobile: push the recipe content down before the photo starts. Lives on
+   the content wrapper (not .modal__panel) so it doesn't shift the
+   position:absolute close button. */
+#modal-content {
+  padding-top: 10vh;
+}
+
 .modal__close {
   position: absolute;
   top: var(--space-4);
@@ -341,5 +358,9 @@
   .modal__close {
     top: var(--space-6);
     right: var(--space-6);
+  }
+
+  #modal-content {
+    padding-top: 0;
   }
 }
