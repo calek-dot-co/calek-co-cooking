@@ -83,8 +83,10 @@
 }
 
 /* Desktop: text-only list by default, at 2x the font size; hovering a row
-   reveals just that row's tilted photo right after the text — inline, not
-   pinned to the row's far edge, so there's no gap for short recipe names. */
+   reveals just that row's tilted photo right after the text. The thumb
+   stays position:absolute (out of flow) here too — same as mobile — so
+   its height never affects row spacing; it's free to overlap the
+   recipe names above/below when revealed instead of pushing them apart. */
 @media (min-width: 768px) {
   .site-header {
     padding-bottom: var(--space-2);
@@ -99,9 +101,7 @@
   }
 
   .recipe-row {
-    display: inline-flex;
-    align-items: center;
-    gap: var(--space-4);
+    display: inline-block;
   }
 
   .recipe-row__name {
@@ -110,10 +110,13 @@
   }
 
   .recipe-row__thumb {
-    position: static;
+    top: 50%;
+    right: auto;
+    left: 100%;
+    margin-left: var(--space-4);
     width: 180px;
     border: none;
-    transform: rotate(var(--rotate, 0deg));
+    transform: translateY(-50%) rotate(var(--rotate, 0deg));
     opacity: 0;
   }
 
