@@ -7,6 +7,7 @@
 html,
 body {
   height: 100%;
+  overscroll-behavior-y: contain;
 }
 
 body {
@@ -19,7 +20,12 @@ body {
   -webkit-font-smoothing: antialiased;
 }
 
+/* overflow:hidden alone doesn't stop iOS Safari from scrolling the body
+   behind a position:fixed overlay — position:fixed here, with the JS-set
+   top offset preserving scroll position, is what actually locks it. */
 body.modal-open {
+  position: fixed;
+  width: 100%;
   overflow: hidden;
 }
 

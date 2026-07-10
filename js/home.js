@@ -41,11 +41,19 @@ const recipeModal = document.getElementById("recipe-modal");
 const modalContent = document.getElementById("modal-content");
 const modalClose = document.querySelector(".modal__close");
 let modalTrigger = null;
+let modalScrollY = 0;
 
 async function openRecipeModal(slug) {
   modalTrigger = document.activeElement;
   modalContent.innerHTML = "Loading&hellip;";
   recipeModal.hidden = false;
+
+  // body.modal-open is position:fixed (see base.css) — overflow:hidden alone
+  // doesn't stop iOS Safari from scrolling/rubber-banding the body behind a
+  // fixed overlay. Pinning it needs an explicit top offset to avoid jumping
+  // to the page's scroll origin, then scrollTo restores it on close.
+  modalScrollY = window.scrollY;
+  document.body.style.top = `-${modalScrollY}px`;
   document.body.classList.add("modal-open");
   modalClose.focus();
 
@@ -63,6 +71,8 @@ async function openRecipeModal(slug) {
 function closeRecipeModal() {
   recipeModal.hidden = true;
   document.body.classList.remove("modal-open");
+  document.body.style.top = "";
+  window.scrollTo(0, modalScrollY);
   modalContent.innerHTML = "";
   modalTrigger?.focus();
 }
