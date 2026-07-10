@@ -23,5 +23,14 @@
     "Puree soup in 2 batches in a food processor or blender until smooth.",
     "Return soup to pan and stir over medium heat for 2-3 minutes or until heated through. Season with salt and pepper and serve."
   ],
+  "ingredientRefs": [
+    { "phrase": "butter", "ingredients": [0] },
+    { "phrase": "cumin", "ingredients": [1] },
+    { "phrase": "onion", "ingredients": [2] },
+    { "phrase": "garlic", "ingredients": [3] },
+    { "phrase": "chillies", "ingredients": [4] },
+    { "phrase": "pumpkin", "ingredients": [5] },
+    { "phrase": "stock", "ingredients": [6] }
+  ],
   "notes": ""
 }

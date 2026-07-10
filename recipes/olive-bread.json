@@ -26,5 +26,15 @@
     "Turn out onto a floured surface. Add onions and olives. Knead until combined. Set aside in a warm place for 1 hour or until doubled in size.",
     "Shape dough into a 20cm round. Place on prepared tray. Brush with milk. Bake for 35 to 40 minutes or until golden brown and hollow when tapped on top. Stand on tray for 5 minutes. Transfer to a wire rack to cool. Serve."
   ],
+  "ingredientRefs": [
+    { "phrase": "flour", "ingredients": [0] },
+    { "phrase": "yeast", "ingredients": [1] },
+    { "phrase": "sugar", "ingredients": [2] },
+    { "phrase": "salt", "ingredients": [3] },
+    { "phrase": "water", "ingredients": [4] },
+    { "phrase": "olives", "ingredients": [6] },
+    { "phrase": "onions", "ingredients": [5] },
+    { "phrase": "milk", "ingredients": [7] }
+  ],
   "notes": ""
 }

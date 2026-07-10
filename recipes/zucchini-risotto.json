@@ -28,5 +28,17 @@
     "When the rice is al dente, remove rosemary bunch and remove pan from heat and stir in the grated Parmesan. Taste and season with salt as needed.",
     "Serve immediately, top with freshly shaved Parmesan."
   ],
+  "ingredientRefs": [
+    { "phrase": "oil", "ingredients": [2] },
+    { "phrase": "onion", "ingredients": [3] },
+    { "phrase": "rosemary", "ingredients": [1] },
+    { "phrase": "salt", "ingredients": [9] },
+    { "phrase": "zucchini", "ingredients": [6] },
+    { "phrase": "rice", "ingredients": [4] },
+    { "phrase": "wine", "ingredients": [5] },
+    { "phrase": "broth", "ingredients": [0] },
+    { "phrase": "grated Parmesan", "ingredients": [7] },
+    { "phrase": "shaved Parmesan", "ingredients": [10] }
+  ],
   "notes": "Recipe from Lidia Caveri, via her now-offline Italian Apartment rental website"
 }
