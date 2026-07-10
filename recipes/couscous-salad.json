@@ -32,7 +32,8 @@
   "ingredientRefs": [
     { "phrase": "couscous", "ingredients": [0] },
     { "phrase": "vegetable stock or water", "ingredients": [1] },
-    { "phrase": "chopped vegetables", "ingredients": [2, 4, 5, 7] }
+    { "phrase": "chopped vegetables", "ingredients": [2, 3, 4, 5, 7] },
+    { "phrase": "herb(s) of your choice", "ingredients": [8] }
   ],
-  "notes": "From thestingyvegan.com/vegan-couscous-salad"
+  "notes": "Recipe from thestingyvegan.com/vegan-couscous-salad"
 }
