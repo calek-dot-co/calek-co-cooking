@@ -62,6 +62,7 @@ async function openRecipeModal(slug) {
     if (!res.ok) throw new Error(`Recipe "${slug}" not found`);
     const recipe = await res.json();
     modalContent.innerHTML = recipeHtml(recipe);
+    initIngredientRefs(modalContent);
   } catch (err) {
     modalContent.innerHTML = "<p>Couldn't load this recipe.</p>";
     console.error(err);
@@ -75,6 +76,7 @@ function closeRecipeModal() {
   window.scrollTo(0, modalScrollY);
   modalContent.innerHTML = "";
   modalTrigger?.focus();
+  hideIngredientTooltip();
 }
 
 document.getElementById("recipe-grid").addEventListener("click", (event) => {

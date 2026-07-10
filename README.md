@@ -44,6 +44,20 @@ A simple static recipe site. No build tools, no frameworks — plain HTML, CSS, 
    The first group's `section` can be omitted if those ingredients don't
    need a heading.
 
+   `ingredientRefs` is optional and links words in `instructions` back to
+   the ingredient list. Each entry underlines the first occurrence of
+   `phrase` (case-insensitive, across all steps) and, on hover/tap/focus,
+   pops up the referenced ingredient line(s) looked up by their flat
+   position in `ingredients` (0-based, counting across all groups if
+   grouped):
+
+   ```json
+   "ingredientRefs": [
+     { "phrase": "flour", "ingredients": [0] },
+     { "phrase": "cream cheese and sugar", "ingredients": [3, 4] }
+   ]
+   ```
+
    `_template.json` itself is a reference file, not a real recipe — it's
    excluded from the homepage automatically.
 

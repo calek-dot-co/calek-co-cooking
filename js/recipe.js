@@ -13,6 +13,7 @@ async function loadRecipe() {
     const recipe = await res.json();
     document.title = `${recipe.name} — Recipes`;
     content.innerHTML = recipeHtml(recipe);
+    initIngredientRefs(content);
   } catch (err) {
     content.innerHTML = "<p>Couldn't load this recipe.</p>";
     console.error(err);

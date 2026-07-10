@@ -269,6 +269,57 @@
   margin-top: 0;
 }
 
+/* Instructions: first mention of a referenced ingredient gets a dotted
+   underline; hovering (desktop) or tapping/focusing (mobile, keyboard)
+   shows the matching ingredient line(s) in a floating tooltip. */
+.ingredient-ref {
+  text-decoration: underline;
+  text-decoration-style: dotted;
+  text-decoration-color: var(--color-text-muted);
+  text-underline-offset: 3px;
+  cursor: pointer;
+}
+
+.ingredient-ref:hover,
+.ingredient-ref:focus-visible {
+  background: var(--color-tag-bg);
+}
+
+.ingredient-tooltip {
+  position: fixed;
+  z-index: 200;
+  max-width: 280px;
+  padding: var(--space-2) var(--space-3);
+  border-radius: var(--radius-sm);
+  background: var(--color-text);
+  color: var(--color-bg);
+  font-size: var(--font-size-small);
+  line-height: var(--line-height-body);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.25);
+}
+
+.ingredient-tooltip div + div {
+  margin-top: var(--space-1);
+}
+
+.ingredient-tooltip::after {
+  content: "";
+  position: absolute;
+  left: var(--arrow-offset, 50%);
+  top: 100%;
+  width: 12px;
+  height: 12px;
+  margin-left: -6px;
+  background: var(--color-text);
+  clip-path: polygon(0 0, 100% 0, 50% 100%);
+}
+
+.ingredient-tooltip--below::after {
+  top: auto;
+  bottom: 100%;
+  clip-path: polygon(50% 0, 100% 100%, 0 100%);
+}
+
 /* Desktop: two columns side by side, Instructions gets more room
    (1/3 Ingredients, 2/3 Instructions) since it's denser prose. */
 @media (min-width: 768px) {

@@ -16,5 +16,8 @@
     }
   ],
   "instructions": ["Step one.", "Step two.", "..."],
+  "ingredientRefs": [
+    { "phrase": "flour", "ingredients": [0] }
+  ],
   "notes": "Optional freeform text, e.g. an attribution or a substitution tip."
 }

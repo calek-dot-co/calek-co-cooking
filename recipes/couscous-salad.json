@@ -29,5 +29,10 @@
     "Transfer to a large bowl. You can serve this salad warm or allow the couscous to cool first. Toss with the chopped vegetables and herb(s) of your choice.",
     "Serve the salad the Mediterranean way with olive oil, vinegar, salt and pepper on the side for each person to dress their salad how they like."
   ],
+  "ingredientRefs": [
+    { "phrase": "couscous", "ingredients": [0] },
+    { "phrase": "vegetable stock or water", "ingredients": [1] },
+    { "phrase": "chopped vegetables", "ingredients": [2, 4, 5, 7] }
+  ],
   "notes": "From thestingyvegan.com/vegan-couscous-salad"
 }
