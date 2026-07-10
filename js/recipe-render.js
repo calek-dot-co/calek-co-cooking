@@ -27,7 +27,7 @@ function recipeHtml(recipe) {
 
   const notes = recipe.notes
     ? `<div class="recipe-notes">
-         <div class="recipe-notes__title">Notes</div>
+         <h2 class="recipe-notes__title">Notes</h2>
          <p>${escapeHtml(recipe.notes)}</p>
        </div>`
     : "";
@@ -36,9 +36,7 @@ function recipeHtml(recipe) {
     <div class="recipe-body">
       <div class="recipe-header-row">
         ${photo}
-        <div class="recipe-header-text">
-          <h1 class="recipe-title">${escapeHtml(recipe.name)}</h1>
-        </div>
+        <h1 class="recipe-title">${escapeHtml(recipe.name)}</h1>
       </div>
       ${tags || meta ? `
         <div class="recipe-info">

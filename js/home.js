@@ -39,11 +39,15 @@ function nameWithBreak(name) {
 
 const recipeModal = document.getElementById("recipe-modal");
 const modalContent = document.getElementById("modal-content");
+const modalClose = document.querySelector(".modal__close");
+let modalTrigger = null;
 
 async function openRecipeModal(slug) {
+  modalTrigger = document.activeElement;
   modalContent.innerHTML = "Loading&hellip;";
   recipeModal.hidden = false;
   document.body.classList.add("modal-open");
+  modalClose.focus();
 
   try {
     const res = await fetch(`recipes/${encodeURIComponent(slug)}.json`);
@@ -60,6 +64,7 @@ function closeRecipeModal() {
   recipeModal.hidden = true;
   document.body.classList.remove("modal-open");
   modalContent.innerHTML = "";
+  modalTrigger?.focus();
 }
 
 document.getElementById("recipe-grid").addEventListener("click", (event) => {

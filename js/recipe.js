@@ -11,7 +11,7 @@ async function loadRecipe() {
     const res = await fetch(`recipes/${encodeURIComponent(slug)}.json`);
     if (!res.ok) throw new Error(`Recipe "${slug}" not found`);
     const recipe = await res.json();
-    document.title = `${recipe.name} — Cooking`;
+    document.title = `${recipe.name} — Recipes`;
     content.innerHTML = recipeHtml(recipe);
   } catch (err) {
     content.innerHTML = "<p>Couldn't load this recipe.</p>";
