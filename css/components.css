@@ -161,7 +161,7 @@
 .recipe-header-row {
   display: flex;
   align-items: center;
-  gap: var(--space-4);
+  gap: 0;
   margin-bottom: var(--space-6);
 }
 
@@ -179,6 +179,7 @@
   flex-direction: column;
   gap: var(--space-2);
   min-width: 0;
+  margin-left: -8px;
 }
 
 .recipe-title {
@@ -192,6 +193,14 @@
 
   .recipe-photo {
     width: 180px;
+  }
+
+  .recipe-header-row {
+    gap: var(--space-4);
+  }
+
+  .recipe-header-text {
+    margin-left: 0;
   }
 }
 
