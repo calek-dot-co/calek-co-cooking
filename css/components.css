@@ -182,7 +182,7 @@
 }
 
 .recipe-title {
-  font-size: var(--font-size-display);
+  font-size: calc(var(--font-size-display) * 1.5);
 }
 
 @media (min-width: 768px) {
@@ -345,7 +345,7 @@
    the content wrapper (not .modal__panel) so it doesn't shift the
    position:absolute close button. */
 #modal-content {
-  padding-top: 10vh;
+  padding-top: 5vh;
 }
 
 .modal__close {
