@@ -50,20 +50,31 @@ function hideIngredientTooltip() {
   ingredientTooltipTrigger = null;
 }
 
+// iOS Safari synthesizes mouseenter *and* click from a single tap (in that
+// order). With both handlers attached, the first tap's mouseenter opened the
+// tooltip and the same tap's click immediately toggled it shut again —
+// tooltip only "stuck" on the second tap. Splitting by real hover support
+// keeps the two interaction models from firing on the same input at all.
+const supportsHover = window.matchMedia("(hover: hover)").matches;
+
 function initIngredientRefs(container) {
   container.querySelectorAll(".ingredient-ref").forEach((trigger) => {
-    trigger.addEventListener("mouseenter", () => showIngredientTooltip(trigger, container));
-    trigger.addEventListener("mouseleave", hideIngredientTooltip);
     trigger.addEventListener("focus", () => showIngredientTooltip(trigger, container));
     trigger.addEventListener("blur", hideIngredientTooltip);
-    trigger.addEventListener("click", (event) => {
-      event.stopPropagation();
-      if (ingredientTooltipTrigger === trigger) {
-        hideIngredientTooltip();
-      } else {
-        showIngredientTooltip(trigger, container);
-      }
-    });
+
+    if (supportsHover) {
+      trigger.addEventListener("mouseenter", () => showIngredientTooltip(trigger, container));
+      trigger.addEventListener("mouseleave", hideIngredientTooltip);
+    } else {
+      trigger.addEventListener("click", (event) => {
+        event.stopPropagation();
+        if (ingredientTooltipTrigger === trigger) {
+          hideIngredientTooltip();
+        } else {
+          showIngredientTooltip(trigger, container);
+        }
+      });
+    }
   });
 }
 

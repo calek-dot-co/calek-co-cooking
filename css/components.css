@@ -360,12 +360,16 @@
   z-index: 100;
 }
 
+/* Mobile's panel is edge-to-edge, so this tint is normally hidden behind
+   it — it only shows up if the panel's edges briefly separate from the
+   viewport during an iOS rubber-band bounce, which is at least a plain
+   dark background if that happens rather than a flash of the homepage. */
 .modal__scroll {
   position: relative;
   height: 100%;
   overflow-y: auto;
   overscroll-behavior-y: contain;
-  background: transparent;
+  background: var(--color-backdrop);
 }
 
 .modal__panel {
@@ -384,9 +388,13 @@
 
 /* position:fixed (not absolute) and a sibling of .modal__scroll, not a
    descendant of the scrolling .modal__panel — otherwise it scrolls away
-   with the content instead of staying put on screen. */
+   with the content instead of staying put on screen. z-index is required
+   here: both this and .modal__scroll are positioned with no explicit
+   z-index, and .modal__scroll comes later in the DOM, so without this it
+   silently wins the paint order and its opaque panel covers the button. */
 .modal__close {
   position: fixed;
+  z-index: 1;
   top: var(--space-4);
   right: var(--space-4);
   display: flex;
@@ -404,10 +412,6 @@
 }
 
 @media (min-width: 768px) {
-  .modal__scroll {
-    background: var(--color-backdrop);
-  }
-
   .modal__panel {
     width: 80%;
     min-height: 0;
