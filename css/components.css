@@ -11,7 +11,7 @@
 /* Recipe list */
 .recipe-grid {
   list-style: none;
-  margin: 0 0 var(--space-7);
+  margin: 0 0 20vh;
   padding: 0;
   display: flex;
   flex-direction: column;
@@ -86,6 +86,10 @@
    reveals just that row's tilted photo right after the text — inline, not
    pinned to the row's far edge, so there's no gap for short recipe names. */
 @media (min-width: 768px) {
+  .site-header__title {
+    font-size: calc(var(--font-size-display) * 2);
+  }
+
   .recipe-row {
     display: inline-flex;
     align-items: center;
@@ -95,11 +99,6 @@
   .recipe-row__name {
     padding-right: 0;
     font-size: calc(var(--font-size-display) * 2);
-    color: var(--color-text-faint);
-  }
-
-  .recipe-row:hover .recipe-row__name {
-    color: var(--color-text);
   }
 
   .recipe-row__thumb {

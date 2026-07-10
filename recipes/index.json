@@ -10,14 +10,14 @@
     "image": "images/olive-bread.jpeg"
   },
   {
+    "slug": "pumpkin-soup",
+    "name": "Pumpkin Soup",
+    "image": "images/pumpkin-soup.jpeg"
+  },
+  {
     "slug": "seed-bread",
     "name": "Seed Bread",
     "image": "images/seed-bread.jpg"
-  },
-  {
-    "slug": "spicy-pumpkin-soup",
-    "name": "Spicy Pumpkin Soup",
-    "image": "images/spicy-pumpkin-soup.jpeg"
   },
   {
     "slug": "zucchini-risotto",
