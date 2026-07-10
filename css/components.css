@@ -4,7 +4,7 @@
 }
 
 .site-header__title {
-  font-size: var(--font-size-display);
+  font-size: calc(var(--font-size-display) * 1.5);
   margin-bottom: 0;
 }
 
@@ -25,7 +25,7 @@
 
 .recipe-row__name {
   display: block;
-  padding-right: 110px;
+  padding-left: 110px;
   font-size: calc(var(--font-size-display) * 1.5);
   font-weight: var(--font-weight-bold);
   letter-spacing: var(--letter-spacing-tight);
@@ -41,7 +41,7 @@
 .recipe-row__thumb {
   position: absolute;
   top: 50%;
-  right: 0;
+  left: 0;
   width: 90px;
   overflow: hidden;
   border-radius: var(--radius-sm);
@@ -103,7 +103,7 @@
   }
 
   .recipe-row__name {
-    padding-right: 0;
+    padding-left: 0;
     font-size: calc(var(--font-size-display) * 2);
   }
 
