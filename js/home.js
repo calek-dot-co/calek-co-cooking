@@ -20,11 +20,21 @@ function recipeRowHtml(recipe) {
   return `
     <li>
       <a class="recipe-row" href="recipe.html?slug=${encodeURIComponent(recipe.slug)}" data-slug="${escapeHtml(recipe.slug)}">
-        <span class="recipe-row__name">${escapeHtml(recipe.name)}</span>
+        <span class="recipe-row__name">${nameWithBreak(recipe.name)}</span>
         ${thumb}
       </a>
     </li>
   `;
+}
+
+// Mobile splits the name after the first word (manual <br>, hidden again
+// on desktop) to match the two-line mockup; desktop just reads the space.
+function nameWithBreak(name) {
+  const parts = name.trim().split(/\s+/);
+  if (parts.length < 2) return escapeHtml(name);
+  const first = escapeHtml(parts[0]);
+  const rest = escapeHtml(parts.slice(1).join(" "));
+  return `${first}<br class="recipe-row__break"> ${rest}`;
 }
 
 const recipeModal = document.getElementById("recipe-modal");
