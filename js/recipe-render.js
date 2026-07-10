@@ -38,10 +38,14 @@ function recipeHtml(recipe) {
         ${photo}
         <div class="recipe-header-text">
           <h1 class="recipe-title">${escapeHtml(recipe.name)}</h1>
-          ${tags ? `<div class="recipe-tags">${tags}</div>` : ""}
         </div>
       </div>
-      ${meta ? `<div class="recipe-meta">${meta}</div>` : ""}
+      ${tags || meta ? `
+        <div class="recipe-info">
+          ${tags ? `<div class="recipe-tags">${tags}</div>` : ""}
+          ${meta ? `<div class="recipe-meta">${meta}</div>` : ""}
+        </div>
+      ` : ""}
       <div class="recipe-split">
         <section class="recipe-pane">
           <h2 class="recipe-pane__title">Ingredients</h2>
