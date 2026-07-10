@@ -16,7 +16,7 @@ function recipeHtml(recipe) {
     .join(" &middot; ");
 
   const photo = recipe.image
-    ? `<img class="recipe-photo" src="${escapeHtml(recipe.image)}" alt="${escapeHtml(recipe.name)}" style="transform: rotate(${randomRotation()}deg)" />`
+    ? `<img class="recipe-photo" src="${escapeHtml(recipe.image)}" alt="${escapeHtml(recipe.name)}" style="--rotate: ${randomRotation()}deg" />`
     : "";
 
   const ingredients = ingredientsHtml(recipe.ingredients);

@@ -117,15 +117,9 @@
     left: 100%;
     margin-left: var(--space-4);
     width: 180px;
-    aspect-ratio: 3 / 4;
     border: none;
     transform: translateY(-50%) rotate(var(--rotate, 0deg));
     opacity: 0;
-  }
-
-  .recipe-row__thumb img {
-    height: 100%;
-    object-fit: cover;
   }
 
   .recipe-row:hover .recipe-row__thumb {
@@ -171,6 +165,7 @@
   background: var(--color-image-bg);
   border-radius: var(--radius-sm);
   flex-shrink: 0;
+  transform: rotate(var(--rotate, 0deg));
 }
 
 .recipe-title {
@@ -186,8 +181,6 @@
 
   .recipe-photo {
     width: 180px;
-    aspect-ratio: 3 / 4;
-    object-fit: cover;
   }
 }
 

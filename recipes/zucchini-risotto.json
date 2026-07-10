@@ -3,8 +3,7 @@
   "name": "Zucchini Risotto",
   "image": "images/zucchini-risotto.jpeg",
   "tags": [
-    "dinner",
-    "italian"
+    "dinner", "italian"
   ],
   "servings": "4-6",
   "prepTime": "10mins",

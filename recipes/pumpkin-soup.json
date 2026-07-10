@@ -3,28 +3,25 @@
   "name": "Pumpkin Soup",
   "image": "images/pumpkin-soup.jpeg",
   "tags": [
-    "soup",
-    "dinner"
+    "soup", "dinner", "vegan"
   ],
   "servings": "4",
   "prepTime": "5mins",
   "cookTime": "30mins",
   "ingredients": [
     "2 tablespoons butter",
-    "3/4 teaspoon ground cumin",
+    "¾ teaspoon ground cumin",
     "1 medium white onion, finely chopped",
     "2 garlic cloves, crushed",
     "2 small red chillies, deseeded, finely chopped",
     "1 kg piece cut pumpkin (Jarrahdale or Butternut), peeled, deseeded, cut into 1cm cubes",
-    "4 cups veggie stock",
-    "1/3 cup sour cream"
+    "4 cups veggie stock"
   ],
   "instructions": [
-    "Heat the butter in a large saucepan over medium heat. Add 1/2 teaspoon of the cumin, onion and garlic and cook for 3-4 minutes or until the onion is soft.",
+    "Heat the butter in a large saucepan over medium heat. Add ½ teaspoon of the cumin, onion and garlic and cook for 3-4 minutes or until the onion is soft.",
     "Stir in the chillies and cook for 30 seconds. Add the pumpkin and stock, cover and bring to the boil. Reduce heat and simmer for 15-18 minutes or until the pumpkin is tender.",
     "Puree soup in 2 batches in a food processor or blender until smooth.",
-    "Return soup to pan and stir over medium heat for 2-3 minutes or until heated through. Season with salt and pepper. Combine remaining cumin with sour cream.",
-    "Serve soup with a dollop of sour cream mixture and a sprinkling of pepper."
+    "Return soup to pan and stir over medium heat for 2-3 minutes or until heated through. Season with salt and pepper and serve."
   ],
   "notes": ""
 }

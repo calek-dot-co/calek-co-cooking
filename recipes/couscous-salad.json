@@ -3,8 +3,7 @@
   "name": "Couscous Salad",
   "image": "images/couscous-salad.jpg",
   "tags": [
-    "dinner",
-    "vegan"
+    "lunch", "dinner", "vegan"
   ],
   "servings": "2",
   "prepTime": "10mins",
