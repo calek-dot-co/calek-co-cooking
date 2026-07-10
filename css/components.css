@@ -377,13 +377,16 @@
 
 /* Mobile: push the recipe content down before the photo starts. Lives on
    the content wrapper (not .modal__panel) so it doesn't shift the
-   position:absolute close button. */
+   fixed-position close button. */
 #modal-content {
   padding-top: 5vh;
 }
 
+/* position:fixed (not absolute) and a sibling of .modal__scroll, not a
+   descendant of the scrolling .modal__panel — otherwise it scrolls away
+   with the content instead of staying put on screen. */
 .modal__close {
-  position: absolute;
+  position: fixed;
   top: var(--space-4);
   right: var(--space-4);
   display: flex;
@@ -413,9 +416,13 @@
     padding: var(--space-6);
   }
 
+  /* .modal__panel is 80% wide, centered (10% each side) with a 10vh top
+     margin — matching that here keeps the button visually anchored to
+     the panel's corner instead of jumping to the browser window's edge,
+     even though it's now fixed to the viewport, not the panel. */
   .modal__close {
-    top: var(--space-6);
-    right: var(--space-6);
+    top: calc(10vh + var(--space-6));
+    right: calc(10% + var(--space-6));
   }
 
   #modal-content {
