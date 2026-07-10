@@ -1,11 +1,11 @@
 # calek-co-cooking
 
-A simple static recipe site. No build tools, no frameworks — plain HTML, CSS, and JS, hosted on GitHub Pages.
+A simple static recipe site. No build tools, no frameworks — plain HTML, CSS, and JS, hosted on GitHub Pages at [cooking.calek.co](https://cooking.calek.co) (custom domain via the `CNAME` file + a DNS record at the registrar).
 
 ## Adding a recipe
 
-1. Add a photo to `images/` (any dimensions — it's displayed in a fixed
-   portrait frame and cropped to fit, so any aspect ratio works).
+1. Add a photo to `images/`. Photos render at their real aspect ratio (no
+   cropping), so use whatever dimensions look right for the shot.
 2. Copy `recipes/_template.json` to `recipes/<your-slug>.json` and fill it in.
    It has every field the site supports:
 
@@ -46,10 +46,9 @@ A simple static recipe site. No build tools, no frameworks — plain HTML, CSS, 
 
    `ingredientRefs` is optional and links words in `instructions` back to
    the ingredient list. Each entry underlines the first occurrence of
-   `phrase` (case-insensitive, across all steps) and, on hover/tap/focus,
-   pops up the referenced ingredient line(s) looked up by their flat
-   position in `ingredients` (0-based, counting across all groups if
-   grouped):
+   `phrase` (case-insensitive, across all steps) and pops up the referenced
+   ingredient line(s), looked up by their flat position in `ingredients`
+   (0-based, counting across all groups if grouped):
 
    ```json
    "ingredientRefs": [
@@ -57,6 +56,13 @@ A simple static recipe site. No build tools, no frameworks — plain HTML, CSS, 
      { "phrase": "cream cheese and sugar", "ingredients": [3, 4] }
    ]
    ```
+
+   On devices with a mouse, the tooltip shows on hover; on touch devices it
+   toggles on tap (the two interaction modes are mutually exclusive per
+   device, based on `(hover: hover)`, to avoid iOS Safari's synthetic
+   mouse-event-after-tap behavior). Keyboard users get it on focus. Pick
+   distinct phrases for ingredients that could otherwise collide (e.g.
+   "grated Parmesan" vs. "shaved Parmesan" if a recipe calls for both).
 
    `_template.json` itself is a reference file, not a real recipe — it's
    excluded from the homepage automatically.
