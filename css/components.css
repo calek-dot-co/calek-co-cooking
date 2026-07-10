@@ -24,6 +24,8 @@
 }
 
 .recipe-row__name {
+  position: relative;
+  z-index: 1;
   display: block;
   padding-left: 82px;
   font-size: calc(var(--font-size-display) * 1.5);
@@ -103,6 +105,8 @@
   }
 
   .recipe-row__name {
+    position: static;
+    z-index: auto;
     padding-left: 0;
     font-size: calc(var(--font-size-display) * 2);
   }
